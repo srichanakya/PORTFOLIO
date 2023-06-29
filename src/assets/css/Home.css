@@ -1,0 +1,144 @@
+
+#home{
+width: 100%;
+height: 80vh;
+/* border: 1px solid green; */
+/* font-family: 'Shadows Into Light', cursive; */
+font-family: 'Caveat', cursive;
+
+}
+
+  .wave {
+    /* border: 1px solid;
+    width: 50%; */
+    float: left;
+    margin: 20px;
+    animation: wave  ease-in-out 0.5s infinite alternate;
+    transform-origin: center -36px;
+  }
+  
+  .wave:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  .wave img {
+    border: 5px solid #f8f8f8;
+    display: block;
+    width: 200px;
+    height: 250px;
+  }
+  
+  .wave figcaption {
+    text-align: center;
+  }
+  
+  .wave:after{
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border: 1.5px solid #ffffff;
+    top: -10px; 
+    left: 50%;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(35deg);
+  }
+         
+  .wave:before{
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    height: 44px;
+    width: 47px;
+    background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    z-index: 16;
+  }
+          
+  @keyframes wave {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+  }
+  
+  
+
+.homecontainer{
+    height: 40vh;
+    margin-top: 20vh;
+    width: 60%;
+    margin-left: 20%;
+    /* border: 5px solid green; */
+}
+
+#textcontent{
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
+    /* border:2px solid red; */
+}
+#textcontent h1{
+    margin-top: 10%;
+    font-size: 30px;
+    
+}
+
+#myname{
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
+
+
+    font-size: 38px;
+    color:#e53e3e ;
+}
+#quo{
+    font-family: 'Caveat', cursive;
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 480px){
+
+    .imagecontent{
+        display: none;
+     }
+
+    .homecontainer{
+        margin-left:0%;
+        height: 60vh;
+       margin-top: 30%;
+        width: 100%;
+        /* border: 5px solid green; */
+    }
+    
+    #textcontent{
+
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        /* border:2px solid red; */
+    }
+    #textcontent h1{
+        text-align: center;
+        margin-top: 10%;
+        font-size: 28px;
+        
+    }
+    
+    #myname{
+        font-family: 'Caveat', cursive;
+        /* font-family: 'Shadows Into Light', cursive; */
+        font-size: 32px;
+        color:#e53e3e ;
+    }
+    #quo{
+        font-family: 'Caveat', cursive;
+        font-size: 32px;
+    }
+    
+    
+
+}
